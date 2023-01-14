@@ -186,6 +186,10 @@ body {
 
 .feature {
 }
+.section-feature {
+  padding-bottom: 0;
+}
+
 .feature-heading {
   opacity: 0;
   display: none;

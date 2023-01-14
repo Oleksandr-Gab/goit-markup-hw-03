@@ -17,6 +17,21 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 img {
   display: block;
 }
@@ -26,37 +41,42 @@ body {
   color: var(--text-color);
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
-  padding-inline-start: 0;
 }
 
 .link {
   text-decoration: none;
 }
-.container {
-  width: 1158px;
-  margin: 0 auto;
-}
 
 .section {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .header {
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header-container {
   display: flex;
-  border-bottom: 1px solid var(--accent-color);
-  justify-content: center;
-  gap: 332px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
   gap: 76px;
+  margin-right: auto;
 }
 
 .header-logo {
@@ -124,6 +144,9 @@ body {
 
 .hero {
   background: var(--dark-color);
+}
+
+.hero-container {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -199,6 +222,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 .location-list {
   display: flex;
@@ -209,7 +233,6 @@ body {
 }
 .tem {
   background: var(--light-color);
-  padding-bottom: 120px;
 }
 .tem-heading {
   font-weight: 700;
@@ -219,6 +242,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 .tem-list {
   display: flex;
@@ -227,12 +251,21 @@ body {
 }
 .tem-item {
 }
+
+.tem-description {
+  text-align: center;
+  background: #ffffff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .tem-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 .tem-text {
   font-size: 16px;
@@ -241,7 +274,8 @@ body {
 }
 .footer {
   background: var(--dark-color);
-  padding-left: 15px;
+}
+.footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -321,7 +355,6 @@ body {
 }
 
 .card {
-  padding-bottom: 120px;
 }
 .card-list {
   display: flex;
@@ -335,12 +368,21 @@ body {
 }
 .card-link {
 }
+
+.card-description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--accent-color);
+}
+
 .card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 .card-text {
   font-size: 16px;
